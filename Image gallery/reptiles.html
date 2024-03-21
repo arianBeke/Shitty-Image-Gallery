@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="reptiles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo ps.png">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img  src="logo ps.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mammals.html">Mammals</a></li>
+                    <li><a id="Reptiles" href="#">Reptiles</a></li>
+                    <li><a href="log-In.html">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        <section id="Turtels">
+            <h2>Turtels</h2>
+        </section>
+    <div class="container">
+        <img src="turtel1.jpeg" alt="Turtel 1" width="200" height="200" onclick="openModal('turtel1.jpeg')">
+        <img src="turtel2.jpeg" alt="Turtel 2" width="200" height="200" onclick="openModal('turtel2.jpeg')">
+        <img src="turtel3.jpeg" alt="Turtel 3" width="200" height="200" onclick="openModal('turtel3.jpeg')">
+        <img src="turtel4.jpeg" alt="Turtel 4" width="200" height="200" onclick="openModal('turtel4.jpeg')">
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image" width="1000px" height="800px">
+        </div>
+    </div>
+        <section id="Lizzards">
+            <h2>Lizzards</h2>
+        </section>
+    <div id="container2" class="container">
+        <img src="lizzard1.jpeg" alt="Lizzard 1" width="200" height="200" onclick="openModal('lizzard1.jpeg')">
+        <img src="lizzard2.jpeg" alt="Lizzard 1" width="200" height="200" onclick="openModal('lizzard2.jpeg')">
+        <img src="lizzard3.jpeg" alt="Lizzard 1" width="200" height="200" onclick="openModal('lizzard3.jpeg')">
+        <img src="lizzard4.jpeg" alt="Lizzard 1" width="200" height="200" onclick="openModal('lizzard4.jpeg')">
+    </div>
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

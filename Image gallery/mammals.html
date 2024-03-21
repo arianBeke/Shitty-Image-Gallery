@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="mammals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo ps.png">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img  src="logo ps.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a id="Mammals" href="#">Mammals</a></li>
+                    <li><a href="reptiles.html">Reptiles</a></li>
+                    <li><a href="log-In.html">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        <section id="hamsters">
+            <h2>Hamsters</h2>
+        </section>
+    <div class="container">
+        <img src="hamster1.jpeg" alt="Hamster 1" width="200" height="200" onclick="openModal('hamster1.jpeg')">
+        <img src="hamster2.jpeg" alt="Hamster 2" width="200" height="200" onclick="openModal('hamster2.jpeg')">
+        <img src="hamster3.jpeg" alt="Hamster 3" width="200" height="200" onclick="openModal('hamster3.jpeg')">
+        <img src="hamster4.jpeg" alt="Hamster 4" width="200" height="200" onclick="openModal('hamster4.jpeg')">
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+            <!-- Close Button -->
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Image in Modal -->
+            <img id="modalImage" src="" alt="Modal Image" width="1000px" height="800px">
+        </div>
+    </div>
+
+        <section id="bears">
+            <h2>Bears</h2>
+        </section>
+    <div id="container2" class="container">
+        <img src="bear1.jpeg" alt="Bear 1" width="200" height="200" onclick="openModal('bear1.jpeg')">
+        <img src="bear2.jpeg" alt="Bear 2" width="200" height="200" onclick="openModal('bear2.jpeg')">
+        <img src="bear3.jpeg" alt="Bear 3" width="200" height="200" onclick="openModal('bear3.jpeg')">
+        <img src="bear4.jpeg" alt="Bear 4" width="200" height="200" onclick="openModal('bear4.jpeg')">
+    </div>
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
