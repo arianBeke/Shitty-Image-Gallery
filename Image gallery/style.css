@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #150050;
+    background-color:  #282c34;
     height: 100vh;
     
 }
@@ -42,7 +42,7 @@ nav{
     font-size: 30px;
 }
 .nav-links ul li a:hover{
-    color: #8ecdff;
+    color: #00df9a;
 }
 .velkomstSide-flex{
     display: flex;
@@ -76,7 +76,7 @@ p{
     color: white;
 }
 button{
-    background-color: #8ecdff;
+    background-color: #00df9a;
     height: 60px;
     width: 150px;
     border-radius: 20px;
@@ -87,8 +87,11 @@ button{
 }
 button:hover{
     scale: 1.1;
-    background-color: white;
+    background-color: #282c34;
+    border: solid #00df9a 2px;
+    color: #00df9a;
     cursor: pointer;
+
 }
 #Home{
     color: #8ecdff;

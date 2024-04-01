@@ -1,5 +1,5 @@
 body{
-    background-color: #150050;
+    background-color: #282c34;
 }
 .back-video{
     position:absolute;
@@ -26,24 +26,24 @@ body{
    width: 100px;
    height: 36px;
    border-radius: 10px;
-   border: solid #8ecdff 2px;
-   background-color: #8ecdff;
+   border: solid #00df9a 2px;
+   background-color: #00df9a;
    transition-duration: 300ms;
-   -webkit-text-fill-color: black;
+   -webkit-text-fill-color: #282c34;
 }
 #Enter:hover{
-    background-color: white;
+    background-color: #282c34;
     cursor: pointer;
-    border: solid white 2px;
-    -webkit-text-fill-color: black;
+    border: solid #00df9a 2px;
+    -webkit-text-fill-color: #00df9a;
 }
 #PassordBox{
     width: 210px;
     height: 30px;
     border-radius: 10px;
     background-color: transparent;
-    border: solid white 2px;
-    -webkit-text-fill-color: white;
+    border: solid #00df9a 2px;
+    -webkit-text-fill-color: #00df9a;
 }
 p{
     margin: 0;
